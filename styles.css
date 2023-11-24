@@ -1,0 +1,356 @@
+body {
+    font-family: Arial;
+    background-image: url('Assets/kellywoodbuilder2.fw.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 73%;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+p, a, h5 {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 15px;
+}
+
+
+.logo {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.logo img {
+    width: 400px;
+}
+
+/* CONTACT INFO */
+
+.contact-info {
+    display: flex;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.contact-info p::after {
+    content: '|';
+    margin: 0 10px;
+    color: lightgray;
+}
+
+.contact-info p:last-child::after {
+    content: none;
+    margin: 0;
+}
+
+.contact-info i {
+    margin-right: 5px;
+    font-size: 18px;
+    color: green;
+}
+
+/* NAVBAR */
+
+nav {
+    overflow: hidden;
+    text-align: right;
+    margin-top: -15px;
+}
+
+nav a {
+    width: 80px;
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    margin-left: 2px;
+    border-radius: 10px 10px 0 0;
+}
+
+nav a:hover {
+    background-color: green;
+    color: white;
+}
+
+nav a.active {
+    background-color: green;
+    color: white;
+}
+
+/* CAROUSEL */
+
+.carousel {
+    align-items: center;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    width: 100%;
+    height: auto;
+}
+
+
+/* COLUMN */
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.column {
+    width: 75%;
+    margin-right: 5px;
+}
+
+.links {
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 8px;
+}
+
+.about-us {
+    color: #333;
+}
+
+.about-us h5:first-child::after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid rgb(224, 224, 224);
+    margin: 8px 0;
+}
+
+.about-us p {
+    line-height: 1.8;
+}
+
+.about-us a p {
+    float: right;
+    font-weight: bold;
+    color: green;
+    margin-right: 20px;
+}
+
+
+/* CONTACT FORM */
+
+.contact-form {
+    width: 30%;
+    background-color: rgb(240, 240, 240);
+    padding: 0 20px;
+}
+
+.contact-form i {
+    color: #333;
+}
+
+.contact-form h3 {
+    color: green;
+    font-weight: 800;
+}
+
+.contact-form form {
+    flex-direction: column;
+    display: block;
+}
+
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 13px;
+    padding: 10px;
+    width: 90%;
+    border: none;
+    background-color: lightgray;
+    font-size: 11px;
+    resize: none;
+}
+
+.contact-form button {
+    text-decoration: none;
+    float: right;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.contact-form button:hover {
+    background-color: #45a049;
+}
+
+
+
+/* FOOTER */
+
+
+footer p {
+    font-size: 12px;
+    color: #333;
+}
+
+.navbar-footer {
+    margin-bottom: -18px;
+    margin-top: 20px;
+}
+
+
+.navbar-footer a {
+    text-decoration: none;
+    color: #333;
+    position: relative;
+    padding: 0;
+    display: inline-block;
+    line-height: 3em; 
+    font-weight: bold;
+}
+
+.navbar-footer a::after {
+    content: '\2022';
+    color: #333;
+    font-size: 2em;
+    margin: 0 5px;
+    vertical-align: middle;
+}
+
+.navbar-footer a:last-child::after {
+    content: none;
+    margin: 0;
+}
+
+.navbar-footer a:hover,
+.navbar-footer a.active {
+    color: green;
+}
+
+
+/* MOBILE RESPONSIVE */
+
+@media screen and (max-width: 800px) {
+    body {
+        width: 90%;
+        overflow-x: hidden;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo, .contact-info {
+        margin-top: 10px;
+    }
+
+    .logo img {
+        width: 100%;
+    }
+
+    .contact-info {
+        font-size: 12px;
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        width: 100%;
+        margin: 2px 0;
+        border-radius: 0;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .links,
+    .about-us,
+    .contact-form,
+    .links img {
+        width: 100%;
+    }
+
+    .links {
+        margin-bottom: 20px;
+    }
+
+    .links a {
+        text-decoration: none;
+        color: #333;
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .about-us {
+        color: #333;
+        text-align: center;
+    }
+
+    .about-us h5:first-child::after {
+        content: "";
+        display: block;
+        border-bottom: 1px solid rgb(224, 224, 224);
+        margin: 8px auto;
+    }
+
+    .about-us a p {
+        float: none;
+        display: block;
+        font-weight: bold;
+        color: green;
+        margin: 10px auto;
+    }
+
+    .contact-form {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .navbar-footer a {
+        width: 100%;
+    }
+
+    .navbar-footer a::after {
+        content: none;
+        margin: 0;
+    }
+}
+
+    

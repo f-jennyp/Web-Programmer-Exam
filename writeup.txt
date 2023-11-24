@@ -1,0 +1,18 @@
+Important note for programmer:
+
+1. Should be coded  and validated in html5 and css3, table-less layout.
+
+2. All fonts are in Arial.
+
+3. The photos, logo, icons and navigation/send buttons should be in .jpg image format.
+     
+4. Feel free to integrate any javascript, php, etc. to show off your skills however it is optional to your programmed website.
+
+5. Do not use free built templates (ex: bootstrap)
+
+6. You can also programmed its responsiveness on mobile view (Optional)
+
+
+
+2 to 3 hrs
+
